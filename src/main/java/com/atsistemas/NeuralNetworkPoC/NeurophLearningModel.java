@@ -70,7 +70,7 @@ public class NeurophLearningModel {
         BackPropagation backPropagation = new BackPropagation();
         backPropagation.setMaxIterations(1000);
         backPropagation.setMaxError(0.01);
-        backPropagation.setLearningRate(0.2);
+        backPropagation.setLearningRate(0.1);
 
         ann.learn(ds, backPropagation);
         return ann;
