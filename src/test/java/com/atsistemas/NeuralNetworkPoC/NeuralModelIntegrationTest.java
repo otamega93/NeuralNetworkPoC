@@ -19,7 +19,7 @@ public class NeuralModelIntegrationTest {
     }
 
     @Test
-    public void leftDisjunctTest() {
+    public void customTestOne() {
         ann.setInput(0, 0, 1);
         ann.calculate();
         print("0, 0, 1", ann.getOutput()[0], 0.0);
@@ -27,7 +27,7 @@ public class NeuralModelIntegrationTest {
     }
 
     @Test
-    public void rightDisjunctTest() {
+    public void customTestTwo() {
         ann.setInput(1, 1, 1);
         ann.calculate();
         print("1, 1, 1", ann.getOutput()[0], 1.0);
@@ -35,7 +35,7 @@ public class NeuralModelIntegrationTest {
     }
 
     @Test
-    public void bothFalseConjunctTest() {
+    public void customTestThree() {
         ann.setInput(1, 0, 1);
         ann.calculate();
         print("1, 0, 1", ann.getOutput()[0], 1.0);
@@ -43,7 +43,7 @@ public class NeuralModelIntegrationTest {
     }
 
     @Test
-    public void bothTrueConjunctTest() {
+    public void customTestFour() {
         ann.setInput(0, 1, 1);
         ann.calculate();
         print("0, 1, 1", ann.getOutput()[0], 0.0);
@@ -51,47 +51,47 @@ public class NeuralModelIntegrationTest {
     }
     
     @Test
-    public void CustomTest() {
+    public void customTestFive() {
         ann.setInput(1, 0, 0);
         ann.calculate();
         print("1, 0, 0", ann.getOutput()[0], 1.0);
     }
     
     @Test
-    public void CustomTestOne() {
+    public void customTestSix() {
         ann.setInput(0, 1, 0);
         ann.calculate();
         print("0, 1, 0", ann.getOutput()[0], 0.0);
     }
     
     @Test
-    public void CustomTestTwo() {
+    public void customTestSeven() {
         ann.setInput(10, 00, 10);
         ann.calculate();
         print("10, 00, 10", ann.getOutput()[0], 1.0);
     }
     
     @Test
-    public void CustomTestFour() {
+    public void customTestEight() {
         ann.setInput(10, 10, 10);
         ann.calculate();
         print("10, 10, 10", ann.getOutput()[0], 1.0);
     }
     
     @Test
-    public void CustomTestFive() {
+    public void customTestNine() {
         ann.setInput(00, 00, 10);
         ann.calculate();
         print("00, 10, 10", ann.getOutput()[0], 0.0);
     }
     
-//    @Test
-//    public void CustomTestSix() {
-//        ann.setInput(0.25, 1, 1);
-//        ann.calculate();
-//        print("0.25, 1, 1", ann.getOutput()[0], 0.0);
-//    }
-//    
+    @Test
+    public void customTestTen() {
+        ann.setInput(0, 0, 0);
+        ann.calculate();
+        print("0, 0, 0", ann.getOutput()[0], 0.0);
+    }
+    
 //    @Test
 //    public void CustomTestSeven() {
 //        ann.setInput(1, 0.25, 1);
